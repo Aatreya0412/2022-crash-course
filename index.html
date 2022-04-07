@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2022 Crash Course</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="G:\My Drive\VSC\2022 Crash course\Code\CSS\style.css">
 </head>
 <body>
 <div class="hero-img"></div>
@@ -14,19 +17,22 @@
         <a href="#" class="logo" >Shoe<span>Brand</span></a>
 
         <nav>
+            <svg class="close" viewBox="0 0 33 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M28.3594 3.0625H4.64062C4.07021 3.0625 3.60938 3.45352 3.60938 3.9375V24.0625C3.60938 24.5465 4.07021 24.9375 4.64062 24.9375H28.3594C28.9298 24.9375 29.3906 24.5465 29.3906 24.0625V3.9375C29.3906 3.45352 28.9298 3.0625 28.3594 3.0625ZM21.7884 17.9895C21.9302 18.1316 21.8109 18.3477 21.5918 18.3477H19.6937C19.5422 18.3477 19.3972 18.2902 19.2973 18.1918L16.5 15.3617L13.7027 18.1918C13.6061 18.2902 13.461 18.3477 13.3063 18.3477H11.4082C11.1891 18.3477 11.0698 18.1316 11.2116 17.9895L15.1529 14L11.2116 10.0105C11.1799 9.97885 11.1595 9.94009 11.1529 9.89886C11.1463 9.85764 11.1538 9.81567 11.1745 9.77796C11.1952 9.74025 11.2283 9.70836 11.2697 9.6861C11.3111 9.66383 11.3592 9.65212 11.4082 9.65234H13.3063C13.4578 9.65234 13.6028 9.70977 13.7027 9.8082L16.5 12.6383L19.2973 9.8082C19.3939 9.70977 19.539 9.65234 19.6937 9.65234H21.5918C21.8109 9.65234 21.9302 9.86836 21.7884 10.0105L17.8471 14L21.7884 17.9895V17.9895Z" fill="black"/>
+            </svg> 
          <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Sneakers</a></li>
                 <li><a href="#">Players</a></li>
 
-            </ul>
+            </ul>  
 
-                    <svg class="close" viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M24 32H0V26.6667H24V32ZM48 18.6667H0V13.3333H48V18.6667ZM48 5.33333H24V0H48V5.33333Z" fill="white"/>
-                    </svg>
-                
+                                  
         </nav>
 
+        <svg class="menu" viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 32H0V26.6667H24V32ZM48 18.6667H0V13.3333H48V18.6667ZM48 5.33333H24V0H48V5.33333Z" fill="white"/>
+        </svg>
     </header>
 
     <section class="hero">
@@ -44,25 +50,39 @@
         <div class="feature">
             <div class="content">
                 <p class="title">Lightweight</p>
-                <p class="title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, vitae?</p>
+                <p class="desc">Upper mesh material provides proper ventilation and reduction in the weight of the shoes.</p>
             </div>
             <img src="G:\My Drive\VSC\2022 Crash course\Images\Shoe 2.jpg" alt="Another Shoe">
         </div>
         <div class="feature left">
             <div class="content">
-                <p class="title">Lightweight</p>
-                <p class="title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, vitae?</p>
+                <p class="title">Flexibility</p>
+                <p class="desc">Soft, flexible soles will allow the walker to push off easly with each step.</p>
             </div>
-            <img src="G:\My Drive\VSC\2022 Crash course\Images\Shoe 2.jpg" alt="Another Shoe">
+            <img src="G:\My Drive\VSC\2022 Crash course\Images\Shoe 3.jpg" alt="Another Shoe">
         </div>
         <div class="feature">
             <div class="content">
-                <p class="title">Lightweight</p>
-                <p class="title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, vitae?</p>
+                <p class="title"> Durability </p>
+                <p class="desc">Lightweight, woven material  is durable and provide structure and support.</p>
             </div>
-            <img src="G:\My Drive\VSC\2022 Crash course\Images\Shoe 2.jpg" alt="Another Shoe">
+            <img src="G:\My Drive\VSC\2022 Crash course\Images\Shoe 4.jpg" alt="Another Shoe">
         </div>
     </section>
 </div>
+
+    <script>
+        const menu = document = document.querySelector('.menu')
+        const close = document = document.querySelector('.close')
+        const nav = document = document.querySelector('nav')
+
+        menu.addEventListener('click', () => {
+            nav.classList.add('open-nav')
+        })
+
+        close.addEventListener('click', () => {
+            nav.classList.remove('open-nav')
+        })
+    </script>
 </body>
 </html>
